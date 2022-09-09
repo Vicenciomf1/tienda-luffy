@@ -1,0 +1,29 @@
+.titulo{
+    color: red;
+    text-align: center;
+}
+img{
+    float: inline-start;
+    width: 200px;
+    max-height: 100px;
+    display: table-cell;
+    border: 1px dotted black;
+    position: relative;
+}
+
+.menu{
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.menu-item{
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    padding: 5px 10px;
+    border: 1px solid;
+    text-align: center;
+    background-color: red;
+    
+}
