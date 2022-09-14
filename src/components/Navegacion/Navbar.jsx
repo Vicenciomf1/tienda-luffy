@@ -1,9 +1,10 @@
 import logito from '../img/logito.png';
 import "./Navbar.css"
+import Cart from "../CartWidget/cartwidget"
 
 function Navbar(){
     return(
-        <header>
+            <div>
             <h1 className="titulo">Tienda Luffy</h1>
             <picture className="logito">
             <a href="index.html"><img src={logito} alt="" /></a>
@@ -26,10 +27,14 @@ function Navbar(){
                     <li className="menu-item">
                         <a href="##" className="menu-link">carrito</a>
                     </li>
+                    <li className='menu-item'>
+                        <Cart/>
+                    </li>
                 </ul>
+                
 
             </nav>
-        </header>
+        </div>
     )
 }
 

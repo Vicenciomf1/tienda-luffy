@@ -3,12 +3,18 @@
     text-align: center;
 }
 img{
-    float: inline-start;
+    
+   display:inline-block;    
+    height:58px;    
+    width:68px;
+      
+    
+  /*   float: inline-start;
     width: 200px;
     max-height: 100px;
     display: table-cell;
     border: 1px dotted black;
-    position: relative;
+    position: relative; */
 }
 
 .menu{
