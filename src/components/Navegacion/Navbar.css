@@ -18,9 +18,17 @@ img{
 }
 
 .menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
+    margin: 0;
+    height: 90px;
+    top: 0;
+
+    /* width: 100%;
     max-width: 900px;
-    margin: auto;
+    margin: auto; */
 }
 
 .menu-item{
