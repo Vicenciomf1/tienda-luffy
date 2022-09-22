@@ -1,15 +1,16 @@
-import React from 'react';
-import Card from './Card'
+import ItemList from '../itemListConatainer/ItemList'
 
-function itemListContainer(props) {
-  return( 
+
+function itemListContainer(greeting) {
+ 
+ return( 
     <div>
-        <h1>{props.greeting}</h1>
+        {/* <h1>{props.greeting}</h1> */}
         <div className='main-container'>
-        <Card title= "Mangaca de devilMan" descripcion= "lorem lipsum" precio="1500"/>
-        <Card title= "Naruto Gaiden"/>
-        <Card title= "Dr Slump"/>
-
+       {/*  <Item title= "Mangaca de devilMan" descripcion= "lorem lipsum" precio="1500"/>
+        <Item title= "Naruto Gaiden"/>
+        <Item title= "Dr Slump"/> */}
+        <ItemList/>
         </div>
       </div>
   )

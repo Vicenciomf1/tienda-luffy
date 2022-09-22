@@ -1,17 +1,21 @@
 import React from 'react';
-import "./card.css"
+import "./Item.css"
 
-function Card(props) {
-  return (
+/* function Card({price,title,category}){} */
+
+function Item({item}) {
+  return(
+    
     <div className='grid'>
     <div className='card'>
       <div>
         <img src="https://place-hold.it/800x600" className='cardImage' alt="card img"></img>
       </div>
       <div className='card-details'>
-        <h3>{props.title}</h3>
-        <p>{props.descripcion}</p>
-        <h4>{props.precio}</h4>
+        <h2>{item.id}</h2>
+        <p>{item.title}</p>
+        <p>{item.detail}</p>
+        <p>{item.price}</p>
       </div>
       <div>
       <a href="##">ver mas</a>
@@ -20,4 +24,4 @@ function Card(props) {
     </div>
   )
 }
-export default Card;
+export default Item;
