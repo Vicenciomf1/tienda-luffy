@@ -3,7 +3,7 @@ import "./Item.css"
 
 /* function Card({price,title,category}){} */
 
-function Item({item}) {
+function Item({items}) {
   return(
     
     <div className='grid'>
@@ -12,10 +12,10 @@ function Item({item}) {
         <img src="https://place-hold.it/800x600" className='cardImage' alt="card img"></img>
       </div>
       <div className='card-details'>
-        <h2>{item.id}</h2>
-        <p>{item.title}</p>
-        <p>{item.detail}</p>
-        <p>{item.price}</p>
+        <h2>{items.id}</h2>
+        <p>{items.title}</p>
+        <p>{items.detail}</p>
+        <p>{items.price}</p>
       </div>
       <div>
       <a href="##">ver mas</a>

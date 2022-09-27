@@ -10,7 +10,8 @@ function itemListContainer(greeting) {
        {/*  <Item title= "Mangaca de devilMan" descripcion= "lorem lipsum" precio="1500"/>
         <Item title= "Naruto Gaiden"/>
         <Item title= "Dr Slump"/> */}
-        <ItemList/>
+        <ItemList/> 
+        
         </div>
       </div>
   )

@@ -31,22 +31,22 @@ const items=[
     "price": 36
   }]
 
-function getItems(){
+/* function getItems(){
   return new Promise((resolve, reject)=>{
     setTimeout(()=>{
       resolve(items)
     },2000)
   })
 }
-export default getItems;
+export default getItems;  */
+
+export default function getSingleItem(){
+  return new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+      resolve(items[3])
+    },2000)
+  })
+}
 
 
-
-  /* export default function getItems(props) {
-    return new Promise((resolve, reject)=>{
-      setTimeout(()=>{
-        resolve(data)
-      }, 1500)
-    })
-  } */
-  
+ 
