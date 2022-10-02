@@ -16,9 +16,10 @@ const items=[
     "price": 80
   }, {
     "id": 4,
-    "title": "Domainer",
-    "category": "Montero",
-    "price": 96
+    "title": "Naruto",
+    "detail": "Manga de 50 paginas",
+    "price": 2000,
+    "img": "/assets/naruto.jpg"
   }, {
     "id": 5,
     "title": "Fintone",
@@ -40,7 +41,7 @@ const items=[
 }
 export default getItems;  */
 
-export default function getSingleItem(){
+export function getSingleItem(){
   return new Promise((resolve, reject)=>{
     setTimeout(()=>{
       resolve(items[3])

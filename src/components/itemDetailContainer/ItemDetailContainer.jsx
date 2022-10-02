@@ -1,24 +1,19 @@
-import React, {useState, useEffect} from 'react';
 import ItemDetail from './itemDetail'
+import React, {useState, useEffect} from 'react';
 import {getSingleItem} from '../../Services/mockAPI'
 
+function ItemDetailContainer() {
 
-function ItemDetailContainer(item) {
-        let [items, setItems]= useState({});
+  let [items, setItems]= useState({});
     
-    useEffect(()=>{
-       getSingleItem().then((respuesta) => setItems(respuesta))
-    },[]);
-    
+  useEffect(()=>{
+     getSingleItem().then((respuesta) => setItems(respuesta))
+  },[items]);
     return(
         <div>
           {
-             items.find((items)=>{
-                return<ItemDetail 
-                id={items.id} 
-                detail={items.detail} 
-                price={items.price}/>
-             })
+             <ItemDetail id={items.id} title={items.title} img={items.img} detail={items.detail} price={items.price} />
+             
             
           }
          
