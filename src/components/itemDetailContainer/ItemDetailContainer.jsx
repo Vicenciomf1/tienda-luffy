@@ -6,11 +6,11 @@ import {useParams} from "react-router-dom"
 function ItemDetailContainer() {
 let [items, setItems]= useState({});
 
-const { id }= useParams()    
+const { itemid }= useParams()    
   
 useEffect(()=>{
-     getSingleItem(id).then((respuesta) => setItems(respuesta))
-  },[]);
+     getSingleItem(itemid).then((respuesta) => setItems(respuesta))
+  },[itemid]);
     return(
         <div>
            
@@ -35,4 +35,4 @@ useEffect(()=>{
   
 //)
 
-export default ItemDetailContainer;
+export default ItemDetailContainer; 

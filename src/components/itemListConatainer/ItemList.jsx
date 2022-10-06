@@ -1,20 +1,22 @@
 import Item from './Item'
 import React, {useState, useEffect} from 'react';
-import getItems from '../../Services/mockAPI'
+import getItems, { getItemsByCategory } from '../../Services/mockAPI'
+//import itemListContainer from './itemListContainer';
+import {useParams} from "react-router-dom"
 
 function ItemList(item) {
     const [cosas, setCosas]= useState([]);
-    useEffect(
-      ()=>{
-   getItems().then(
-    (respuesta)=>{
-    console.log("press");
-      setCosas(respuesta)
+
+    const {cat}= useParams()
+
+    useEffect(()=>{
+    if(cat === undefined){
+      getItems().then((respuesta)=>setCosas(respuesta))
     }
-    )
-    },
-    []
-  )
+    else{
+      getItemsByCategory(cat).then((respuesta)=>setCosas(respuesta))
+    }
+  },[cat])
 return(
     <>
         {
@@ -31,3 +33,4 @@ return(
 //)
 
 export default ItemList;
+
