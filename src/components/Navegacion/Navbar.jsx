@@ -16,21 +16,6 @@ function Navbar(){
                 <li className="menu-item">
                         <a href="##" className="menu-link">login</a>
                     </li>
-<<<<<<< HEAD
-=======
-                    <li className="menu-item">
-                        <a href="/items" className="menu-link">inicio</a>
-                    </li>
-                    <li className="menu-item">
-                        <Link to="/" className="menu-link">productos</Link>
-                    </li>
-                    <li className="menu-item">
-                        <a href="##" className="menu-link">quienes somos?</a>
-                    </li>
-                    <li className="menu-item">
-                        <a href="##" className="menu-link">carrito</a>
-                    </li>
->>>>>>> a85f36e0a8c33533e85c40c49e32eb607b2a990e
                     <li className='menu-item'>
                         <Link to= "/" className='menu-link'>Mangas</Link>
                     </li>
