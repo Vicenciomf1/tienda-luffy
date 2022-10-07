@@ -1,6 +1,7 @@
 import Item from './Item'
 import React, {useState, useEffect} from 'react';
 import getItems from '../../Services/mockAPI'
+//import itemListContainer from './itemListContainer';
 
 function ItemList(item) {
     const [cosas, setCosas]= useState([]);
@@ -18,8 +19,8 @@ function ItemList(item) {
 return(
     <>
         {
-            cosas.map((item)=>{
-                return<Item item={item}/>
+            cosas.map((items)=>{
+              return<Item items={items}/>
                 /*   return<Item key ={item.id} data={item}/> */
 })
 }

@@ -1,13 +1,14 @@
 import logito from '../img/logito.png';
 import "./Navbar.css"
 import Cart from "../CartWidget/cartwidget"
+import {Link} from "react-router-dom"
 
 function Navbar(){
     return(
             <div>
             <h1 className="titulo">Tienda Luffy</h1>
             <picture className="logito">
-            <a href="index.html"><img src={logito} alt="" /></a>
+            <Link to="/"><img src={logito} alt="" /></Link>
             </picture>
             
             <nav className="navbar">
@@ -16,10 +17,10 @@ function Navbar(){
                         <a href="##" className="menu-link">login</a>
                     </li>
                     <li className="menu-item">
-                        <a href="l#" className="menu-link">inicio</a>
+                        <a href="/items" className="menu-link">inicio</a>
                     </li>
                     <li className="menu-item">
-                        <a href="##" className="menu-link">productos</a>
+                        <Link to="/" className="menu-link">productos</Link>
                     </li>
                     <li className="menu-item">
                         <a href="##" className="menu-link">quienes somos?</a>
