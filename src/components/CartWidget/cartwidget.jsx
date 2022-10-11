@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartArrowDown }  from "@fortawesome/free-solid-svg-icons";
 //import { render } from 'react-dom';
 
-function cartwidget(props){
+function Cartwidget(props){
   return (
     <div>
         <h1><FontAwesomeIcon icon={faCartArrowDown}/></h1>
@@ -11,5 +11,5 @@ function cartwidget(props){
   )
 }
 
-export default cartwidget;
+export default Cartwidget;
 

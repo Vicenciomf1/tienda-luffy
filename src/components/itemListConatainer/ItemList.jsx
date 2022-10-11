@@ -20,8 +20,8 @@ function ItemList(item) {
 return(
     <>
         {
-            cosas.map((items)=>{
-              return<Item items={items}/>
+            cosas.map((item)=>{
+                return<Item item={item}/>
                 /*   return<Item key ={item.id} data={item}/> */
 })
 }
@@ -33,4 +33,3 @@ return(
 //)
 
 export default ItemList;
-

@@ -1,4 +1,4 @@
-import ItemDetail from './itemDetail';
+import ItemDetail from './itemDetail'
 import React, {useState, useEffect} from 'react';
 import {getSingleItem} from '../../Services/mockAPI'
 import {useParams} from "react-router-dom"
@@ -6,11 +6,11 @@ import {useParams} from "react-router-dom"
 function ItemDetailContainer() {
 let [items, setItems]= useState({});
 
-const { id }= useParams()    
+const { itemid }= useParams()    
   
 useEffect(()=>{
-     getSingleItem(id).then((respuesta) => setItems(respuesta))
-  },[id]);
+     getSingleItem(itemid).then((respuesta) => setItems(respuesta))
+  },[itemid]);
     return(
         <div>
            
@@ -32,6 +32,7 @@ useEffect(()=>{
     
    
 
+  
+//)
 
-
-export default ItemDetailContainer; 
+export default ItemDetailContainer;

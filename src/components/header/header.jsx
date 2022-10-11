@@ -1,13 +1,12 @@
-import React from 'react'
-import Portada from '../img/portada.jpg'
-import './header.css'
+import React from 'react';
+import './header.css';
 
 function header() {
   return (
     <div>
         
          
-        <img src={Portada} className="Portadita"alt="Header" />
+        <img src="/assets/img/portada.jpg" className="Portadita" alt="Header" />
         
         
     </div>
