@@ -1,4 +1,4 @@
-import ItemDetail from './itemDetail'
+import ItemDetail from './itemDetail';
 import React, {useState, useEffect} from 'react';
 import {getSingleItem} from '../../Services/mockAPI'
 import {useParams} from "react-router-dom"
@@ -32,7 +32,6 @@ useEffect(()=>{
     
    
 
-  
-//)
 
-export default ItemDetailContainer;
+
+export default ItemDetailContainer; 

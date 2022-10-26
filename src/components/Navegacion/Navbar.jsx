@@ -8,7 +8,7 @@ function Navbar(){
             <div>
             <h1 className="titulo">Tienda Luffy</h1>
             <picture className="logito">
-            <a href="index.html"><img src={logito} alt="" /></a>
+            <Link to="/"><img src={logito} alt="" /></Link>
             </picture>
             
             <nav className="navbar">

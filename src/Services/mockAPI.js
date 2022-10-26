@@ -72,5 +72,7 @@ export function getItemsByCategory(cat){
     if(itemFind) resolve(itemFind);
     else reject (new Error("item no encontrado"))
   })
+
+ 
 }
  
