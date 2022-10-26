@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import onAddToCart from '../itemDetailContainer/itemDetail'
 
 function ItemCount(props) {
 const [count, setCount]= useState(1)
@@ -24,7 +25,12 @@ return (
         <span>{count}</span>
         <button onClick={handleSubstract}>-</button>
     </div>
+    <div>
     <button>Agregar al carrito</button>
+    </div>
+    <div>
+        <button onClick={()=>onAddToCart(count)}>agregar al carrito</button>
+    </div>
     </div>
   );
 }
